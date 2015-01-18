@@ -2,12 +2,19 @@
   box-sizing: border-box;
 }
 p {
-  font-size: 16px;
+  font-size: 24px;
 }
 html,
 body {
   margin: 0;
   height: 100%;
+}
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+body.done {
+  text-align: center;
 }
 .wrap {
   margin: 20px;
@@ -15,12 +22,18 @@ body {
 #text {
   color: #f25e92;
 }
+#text h1 {
+  margin-top: 0px;
+}
 .drag {
-  background-color: #f25e92;
-  border: dashed 6px #bf3465;
+  background-color: #fde7ef;
+  border: dashed 6px #f25e92;
+}
+.drag .wrap {
+  margin-top: 14px;
 }
 .drag #text {
-  color: #bf3465;
+  color: #f25e92;
 }
 .drag > .wrap {
   margin: 14px;
